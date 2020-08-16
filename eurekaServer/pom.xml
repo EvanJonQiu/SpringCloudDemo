@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>config-server</artifactId>
+	<artifactId>eurekaServer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>config-server</name>
+	<name>eurekaServer</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -20,10 +20,9 @@
 	</properties>
 
 	<dependencies>
-		
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-config-server</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 
 		<dependency>
@@ -36,13 +35,6 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>
-				spring-cloud-starter-netflix-eureka-client
-			</artifactId>
 		</dependency>
 	</dependencies>
 

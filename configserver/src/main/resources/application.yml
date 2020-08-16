@@ -5,7 +5,10 @@ spring:
     active: native
   cloud:
     config:
+      discovery:
+        enabled: true
       server:
         native:
           search-locations:
           - file:///D:\Study\SpringCloudDemo\configserver\src\main\resources\config\licensingservice
+          - file:///D:\Study\SpringCloudDemo\configserver\src\main\resources\config\organizationservice
