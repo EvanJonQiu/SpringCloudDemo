@@ -10,5 +10,5 @@ spring:
       server:
         native:
           search-locations:
-          - file:///D:\Study\SpringCloudDemo\configserver\src\main\resources\config\licensingservice
-          - file:///D:\Study\SpringCloudDemo\configserver\src\main\resources\config\organizationservice
+          - file:///Users/qiu/workspaces/SpringCloudDemo/configserver/src/main/resources/config/licensingservice
+          - file:///Users/qiu/workspaces\SpringCloudDemo\configserver\src\main\resources\config\organizationservice
