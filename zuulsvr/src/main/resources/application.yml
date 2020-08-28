@@ -1,0 +1,28 @@
+server:
+  port: 5555
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.example: DEBUG
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - routes
+zuul:
+  ignored-services:
+  - '*'
+  prefix: /api
+  routes:
+    organizationservice: /organization/**
+    licensingservice: /licensing/**
