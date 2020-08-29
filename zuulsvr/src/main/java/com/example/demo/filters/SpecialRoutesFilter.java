@@ -77,7 +77,9 @@ public class SpecialRoutesFilter extends ZuulFilter {
 		return filterUtils.ROUTE_FILTER_TYPE;
 	}
 
-	private ProxyRequestHelper helper = new ProxyRequestHelper();
+	//private ProxyRequestHelper helper = new ProxyRequestHelper();
+	@Autowired
+	private ProxyRequestHelper helper;
 
 	@Override
 	public int filterOrder() {
