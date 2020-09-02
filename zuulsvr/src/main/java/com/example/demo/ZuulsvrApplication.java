@@ -16,7 +16,7 @@ import com.example.demo.utils.UserContextInterceptor;
 @EnableZuulProxy
 public class ZuulsvrApplication {
 
-	@LoadBalanced
+	//@LoadBalanced
     @Bean
     public RestTemplate getRestTemplate(){
         RestTemplate template = new RestTemplate();

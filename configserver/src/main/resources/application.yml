@@ -13,3 +13,4 @@ spring:
           - file:///Users/qiu/workspaces/SpringCloudDemo/configserver/src/main/resources/config/licensingservice
           - file:///Users/qiu/workspaces\SpringCloudDemo\configserver\src\main\resources\config\organizationservice
           - file:///Users/qiu/workspaces\SpringCloudDemo\configserver\src\main\resources\config\specialroutesservice
+          - file:///Users/qiu/workspaces\SpringCloudDemo\configserver\src\main\resources\config\authenticationservice
