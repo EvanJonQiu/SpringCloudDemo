@@ -10,7 +10,9 @@ spring:
       server:
         native:
           search-locations:
-          - file:///Users/qiu/workspaces/SpringCloudDemo/configserver/src/main/resources/config/licensingservice
-          - file:///Users/qiu/workspaces\SpringCloudDemo\configserver\src\main\resources\config\organizationservice
-          - file:///Users/qiu/workspaces\SpringCloudDemo\configserver\src\main\resources\config\specialroutesservice
-          - file:///Users/qiu/workspaces\SpringCloudDemo\configserver\src\main\resources\config\authenticationservice
+          - file:///D:\Study/SpringCloudDemo/configserver/src/main/resources/config/licensingservice
+          - file:///D:\Study\SpringCloudDemo\configserver\src\main\resources\config\organizationservice
+          - file:///D:\Study\SpringCloudDemo\configserver\src\main\resources\config\specialroutesservice
+          - file:///D:\Study\SpringCloudDemo\configserver\src\main\resources\config\authenticationservice
+          - file:///D:\Study\SpringCloudDemo\configserver\src\main\resources\config\orgservice
+          - file:///D:\Study\SpringCloudDemo\configserver\src\main\resources\config\licservice

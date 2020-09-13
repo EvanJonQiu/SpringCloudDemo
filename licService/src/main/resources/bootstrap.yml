@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: licservice
+  profiles:
+    active: default
+  cloud:
+    config:
+      enabled: true
+#      uri: http://localhost:8888
+  redis:
+    host: localhost
+    port: 6379

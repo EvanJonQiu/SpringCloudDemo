@@ -1,0 +1,32 @@
+server:
+  port: 9999
+spring.jpa.database: "POSTGRESQL"
+spring.datasource.platform:  "postgres"
+spring.jpa.show-sql: "true"
+spring.database.driverClassName: "org.postgresql.Driver"
+spring.datasource.url: "jdbc:postgresql://localhost:5432/test"
+spring.datasource.username: "test"
+spring.datasource.password: "test"
+spring.datasource.testWhileIdle: "true"
+spring.datasource.validationQuery: "SELECT 1"
+spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
+signing.key: "345345fsdfsf5345"
+
+
+spring:
+  cloud:
+    stream:
+      default-binder: kafka
+      kafka:
+        binder:
+          brokers:
+          - 192.168.5.101:9092
+      bindings:
+        input:
+         binder: kafka
+         destination: orgChangeTopic
+         content-type: text/plain
+        output:
+          binder: kafka
+          destination: orgChangeTopic
+          content-type: text/plain
